@@ -47,8 +47,7 @@ const wordInput = document.getElementById("word-input");
 const wordMean = document.getElementById("word-mean");
 const wordResult = document.getElementById("word-result");
 const beforeWord = document.getElementById("before-word");
-const wordSubmitBtn = document.getElementById("word-submit-btn");
-const correctWordBtn = document.getElementById("correct-word-btn");
+const correctWord = document.getElementById("correct-word");
 
 let wordMark;
 let randomIndex;
@@ -59,8 +58,7 @@ function seeCorrect() {
 }
 
 function randomWord() {
-  randomIndex = Math.floor(Math.random() * wordArray.length);
-  console.log(wordArray[randomIndex]);
+  randomIndex = Math.round(Math.random() * wordArray.length);
   wordMean.innerText = wordArray[randomIndex].mean;
   wordMark = wordArray[randomIndex].word;
 }
@@ -70,13 +68,11 @@ function markWord(event) {
   if (wordMark === wordInput.value.toLowerCase()) {
     wordResult.innerText = "정답입니다.";
     saveBefore = wordArray[randomIndex].word;
-    beforeWord.innerText = `이전 단어 : ${saveBefore}`;
-    beforeWord.href = `https://en.dict.naver.com/#/search?query=${saveBefore}`;
-    if (wordArray.length < 2) {
+    beforeWord.innerText = `이전 단어 : ${JSON.stringify(saveBefore)}`;
+    beforeWord.href = `https://en.dict.naver.com/#/search?query=${beforeWord.innerText}`;
+    if (wordArray.length < 1) {
       wordResult.innerText = "축하합니다. 모든 문제를 다 풀었어요!";
       wordInput.setAttribute("disabled", "true");
-      wordSubmitBtn.setAttribute("disabled", "true");
-      correctWordBtn.setAttribute("disabled", "true");
     } else {
       wordArray.splice(parseInt(randomIndex), 1);
       wordInput.setAttribute("placeholder", ``);
@@ -94,4 +90,4 @@ function init() {
 
 init();
 wordInputForm.addEventListener("submit", markWord);
-correctWordBtn.addEventListener("click", seeCorrect);
+correctWord.addEventListener("click", seeCorrect);
