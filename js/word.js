@@ -1,4 +1,5 @@
 const wordArray = [
+  // 2001~
   {
     word: "shed",
     mean: "떨어뜨리다, 흘리다, 벗다, 털갈이를 하다, (빛을) 비추다, 보관하는 곳, 헛간",
@@ -64,7 +65,7 @@ function randomWord() {
 
 function markWord(event) {
   event.preventDefault();
-  if (wordMark === wordInput.value) {
+  if (wordMark === wordInput.value.toLowerCase()) {
     wordResult.innerText = "정답입니다.";
     saveBefore = wordArray[randomIndex].word;
     beforeWord.innerText = `이전 단어 : ${JSON.stringify(saveBefore)}`;
