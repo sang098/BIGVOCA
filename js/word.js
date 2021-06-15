@@ -300,6 +300,67 @@ const wordArray = [
     word: "museum",
     mean: "박물관, 미술관, 기념관",
   },
+  {
+    word: "assault",
+    mean: "폭행, (점거를 위한) 공격, 도전, 맹비난, 폭행하다, (청각 ' 후각 등을) 괴롭히다",
+  },
+  {
+    word: "flame",
+    mean: "불길, 불타는 듯한, 빨간색, 격정, 활활 타오르다, (무엇을) 빨갛게 만들다",
+  },
+  {
+    word: "declare",
+    mean: "선언[선표/공표]하다, 언명하다, 분명히 말하다, (세관에 과세 물품을) 신고하다",
+  },
+  {
+    word: "license",
+    mean: "(공적으로) 허가하다, 면허[자격](증), 지나친 자유, 방종",
+  },
+  { word: "forgive", mean: "용서하다, 양해하다, (빚을) 탕감하다" },
+  {
+    word: "flood",
+    mean: "홍수, 쇄도, 폭주, 물에 잠기다[잠기게 하다], 범람하다[시키다], 쇄도[폭주]하다",
+  },
+  {
+    word: "attract",
+    mean: "마음을 끌다, 끌어들이다, (어떤 반응을) 불러일으키다, (자석 등이) 끌어당기다",
+  },
+  { word: "funny", mean: "우스운, 웃기는, 재미있는, 기이한, 괴상한" },
+  {
+    word: "earn",
+    mean: "(돈을)벌다, (이자 ' 수익 등을) 올리다[받다], (자격 ' 자질이 되어서 무엇을)얻다",
+  },
+  { word: "barrier", mean: "장애물, 장벽, 한계, 벽" },
+  { word: "cable", mean: "케이블, 전선, 유선 사업자" },
+  {
+    word: "rage",
+    mean: "분노, 격노, 폭력 사태, 몹시[격렬히] 화를 내다, 맹렬히 계속되다, 급속히 번지다",
+  },
+  { word: "penalty", mean: "처벌, 형벌, 벌금, 위약금, 불이익, 벌칙" },
+  { word: "tremendous", mean: "엄청난, 굉장한, 대단한" },
+  { word: "solar", mean: "태양의, 태양열을 이용한" },
+  { word: "collaboration", mean: "공동 작업[연구], 협력" },
+  { word: "plasma", mean: "플라즈마, (생물) 혈장" },
+  {
+    word: "portfolio",
+    mean: "서류 가방, 작품집, 유가증권 보유 알람표, 상품목록",
+  },
+  { word: "angel", mean: "천사, 아주 친절한 사람" },
+  {
+    word: "wash",
+    mean: "씻다, 세탁하다, (물이) 물려오다, 휩쓸고 가다, 씻기, 세탁, 빨래, 너울[파도]",
+  },
+  { word: "pregnant", mean: "임신[수태]한, (어떤 특질 ' 느낌으로) 그득한" },
+  {
+    word: "temper",
+    mean: "(걸핏하면 화를 내는) 성질[성미], 울화통, 누그러뜨리다, 담금질 하다",
+  },
+  { word: "aunt", mean: "고모, 이모, (외)숙모" },
+  { word: "fame", mean: "명성, 명예, 유명" },
+  {
+    word: "belt",
+    mean: "벨트, 허리띠, (특정)지대, 강타, 벨트를 매다, 세게 치다, 강타하다",
+  },
 ];
 
 const wordInputForm = document.getElementById("word-form");
