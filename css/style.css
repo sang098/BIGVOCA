@@ -1,6 +1,9 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
 a {
@@ -8,10 +11,96 @@ a {
   color: inherit;
 }
 
+#word-input {
+  text-transform: lowercase;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header header" 1fr
+    "content content content content" 2fr
+    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.header,
+.content,
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: #0066ff;
+  grid-area: header;
+}
+.content {
+  background-color: #fff;
+  grid-area: content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background-color: #06f006;
+  grid-area: footer;
+}
+
 .hidden {
   display: none;
 }
 
-#word-input {
-  text-transform: lowercase;
+/* level section */
+
+#level-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#level-form .level-group button {
+  max-width: 150px;
+  max-height: 150px;
+  font-size: 70px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+
+#level-form input {
+  background-color: rgba(0, 0, 0, 0);
+  width: 150px;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 70px;
+  text-align: center;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+#level-section.container button[type="submit"] {
+  background-color: #8e97fd;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  width: 200px;
+  height: 63px;
+  border-radius: 38px;
+}
+
+/* main section */
+
+#main-section.container {
+}
+
+#word-mean {
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
