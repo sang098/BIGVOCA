@@ -10801,6 +10801,8 @@ const wordArray = [
 const levelForm = document.getElementById("level-form");
 const levelInput = document.getElementById("level-input");
 const levelSection = document.getElementById("level-section");
+const beforeLevel = document.getElementById("before-level");
+const afterLevel = document.getElementById("after-level");
 
 let level;
 
@@ -10819,6 +10821,20 @@ let randomIndex;
 let saveBefore;
 let wordProgress = 1;
 let wordTotal;
+
+function changeLevelAfter(event) {
+  event.preventDefault();
+  if (levelInput.value < wordArray.length) {
+    levelInput.value = parseInt(levelInput.value) + 1;
+  }
+}
+
+function changeLevelBefore(event) {
+  event.preventDefault();
+  if (levelInput.value > 1) {
+    levelInput.value = levelInput.value - 1;
+  }
+}
 
 function selectLevel(event) {
   event.preventDefault();
@@ -10877,3 +10893,5 @@ init();
 levelForm.addEventListener("submit", selectLevel);
 wordInputForm.addEventListener("submit", markWord);
 correctWordBtn.addEventListener("click", seeCorrect);
+beforeLevel.addEventListener("click", changeLevelBefore);
+afterLevel.addEventListener("click", changeLevelAfter);

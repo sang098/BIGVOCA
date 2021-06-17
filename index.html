@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <aside id="level-section">
-      <form id="level-form" action="#" method="GET">
-        <input id="level-input" type="number" value="1" min="1" max="" />
-        <button type="submit"></button>
-      </form>
+    <aside id="level-section" class="container">
+      <div class="header">
+        <h1>BIGVOCA</h1>
+      </div>
+      <div class="content">
+        <form id="level-form" action="#" method="GET">
+          <div class="level-group">
+            <button id="before-level" type="button">&lt;</button>
+            <input id="level-input" type="number" value="1" min="1" max="" />
+            <button id="after-level" type="button">&gt;</button>
+          </div>
+          <button type="submit">시작</button>
+        </form>
+      </div>
+      <div class="footer">
+        <p>꾸준히 하면 반드시 늘어요!!</p>
+      </div>
     </aside>
 
-    <section id="main-section" class="hidden">
-      <h1 id="progress"></h1>
-      <a id="before-word" href="#" target="_blank"></a>
-      <p id="word-mean"></p>
-      <form id="word-form" action="#" method="GET">
-        <input id="word-input" type="text" autocomplete="off" required />
-        <button id="word-submit-btn" type="submit">제출</button>
-        <button id="correct-word-btn" type="button">정답보기</button>
-      </form>
-      <h1 id="word-result"></h1>
-      <a href="./index.html">레벨 선택하기</a>
+    <section id="main-section" class="hidden container">
+      <div class="header"><h1 id="progress"></h1></div>
+      <div class="content">
+        <a id="before-word" href="#" target="_blank"></a>
+        <p id="word-mean"></p>
+        <form id="word-form" action="#" method="GET">
+          <input id="word-input" type="text" autocomplete="off" required />
+          <button id="word-submit-btn" type="submit">제출</button>
+          <button id="correct-word-btn" type="button">정답보기</button>
+        </form>
+        <h1 id="word-result"></h1>
+      </div>
+      <div class="footer"><a href="./index.html">레벨 선택하기</a></div>
     </section>
     <script src="./js/word.js"></script>
   </body>
