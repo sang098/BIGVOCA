@@ -2772,7 +2772,7 @@ const wordArray = [
       mean: "(사람이) 태어난 곳의, 토박이의, 원주민의, 타고난, 토착민, 현지인, 토종",
     },
     {
-      word: "FALSE",
+      word: "false",
       mean: "틀린, 사실이 아닌, 인조의[가짜의], 위조된, 거짓된, 기만적인",
     },
     { word: "combination", mean: "조합, 결합, 연합, 배합" },
